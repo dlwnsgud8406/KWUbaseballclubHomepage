@@ -1,11 +1,11 @@
 # KWUbaseballclubHomepage
 광운대학교 아마야구반 홈페이지
 
-team : KWU Pegasus
+team : 🦄KWU Pegasus
 
-manager : JunHyeong
+manager : 👑JunHyeong
 
 members:
-- IkSoo
-- Seo
-- Wonjae
+- 💡IkSoo️
+- ️⚜Seo(design)
+- ️⚜Wonjae(design)
