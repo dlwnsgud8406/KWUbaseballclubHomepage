@@ -6,6 +6,6 @@ team : KWU Pegasus
 manager : JunHyeong
 
 members:
-- IkSoo
+- Han Ik Soo No.0
 - Seo
 - Wonjae
