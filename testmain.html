@@ -1,380 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=1500, initial-scale=1">
-<meta name="facebook-domain-verification" content="rg6go5h45qivg7wx7nn9qeanzjnsxc" />
-<title>KWU PEGASUS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500, initial-scale=1">
+    <meta name="facebook-domain-verification" content="rg6go5h45qivg7wx7nn9qeanzjnsxc" />
+    <link rel="stylesheet" href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/main_head.css"> 
+    <title>KWU PEGASUS</title>
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        padding: 0;
-        margin: 0;
-    }
-    .text-sns-name{
-        font-weight: 400;
-        font-size: 15px;
-        padding: 0 10px;
-    }
-    
-    /* sns */
-    #tb-sns {
-        margin: 50px 0 50px 0;
-    }
-    #tb-sns td {
-        text-align: center;
-    }
-    
-    #tb-sns td:first-child {
-        text-align: left;
-        padding-left: 70px;
-    }
-    #tb-sns td:last-child {
-        text-align: right;
-        padding-right: 70px;
-    }
-    
-    #tb-sns td:not(:last-child ) {
-        border-right: 1px solid #CDD1D4;
-    }
-    
-    #tb-sns td p {
-        font-size: 25px;
-        font-weight: 500;
-        margin: 15px 0 30px 0;
-    }
-    
-    .tr-sns-text td {
-        padding: 20px 0 0;
-        border-right: none !important;
-        border-left: none !important;
-    }
-    
-    </style>
-    </head>
+</head>
+
     <body>
         <div class="wrapper">
-    
             <div>
-                
-    
-    
-    
-    
-    <!-- Navbar -->
-    <link href="/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" />
-    <link href="/css/bootstrap-grid.min.css?v=3.3.7" rel="stylesheet" />
-    <link href="/css/common.css?ver190408" rel="stylesheet" />
-    <style>
-    .navbar-custom {
-        width: 100%;
-        min-width: 1380px;
-        z-index: 1000;
-        color: #fff;
-        background: #c01c32;
-    }
-    
-    .navbar-custom button {
-        color: #fff;
-        background: none;
-        border: none;
-        line-height: 2.6;
-        padding-bottom: 5px;
-    }
-    
-    .btn-top-menu {
-        width: 125px;
-        font-size: 17px;
-        font-weight: 300;
-    }
-    
-    .btn-top-submenu {
-        padding: 0 10px
-    }
-    
-    #btn-navi-menu {
-        width: 50px;
-        height: 50px;
-        background-image: url(/img/top/top_ic_menu.png);
-        background-repeat: no-repeat;
-        border: none;
-        outline: none;
-    }
-    
-    #btn-navi-menu.active {
-        background-image: url(/img/top/top_ic_close.png);
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    #nav-top-menu-btns {
-        position: absolute;
-        width: 100%;
-        min-width: 1380px;
-        padding: 36px 0px 0px 0px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        z-index: 100;
-    }
-    
-    #nav-top-menu-btns.active {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    #menu-dim table th {
-        font-size: 18px;
-        font-weight: 700;
-        border-left: 1px solid rgb(255, 255, 255, 0.3);
-        padding: 10px 20px;
-        opacity: 1;
-        line-height: 1;
-    }
-    
-    #menu-dim table td {
-        border-left: 1px solid rgb(255, 255, 255, 0.3);
-        padding-left: 20px;
-        font-size: 15px;
-    }
-    
-    #menu-dim a {
-        color: white;
-    }
-    
-    #menu-backgroud span {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 2.3;
-        opacity: 0.8;
-    }
-    
-    /* drop down */
-    .drop {
-        display: inline-block;
-        position: relative;
-    }
-    
-    .drop:hover .dropdownContain {
-        top: 50px;
-    }
-    .drop:hover .dropOut {
-        opacity: 1;
-    }
-    
-    .dropOut .triangle {
-        width: 0;
-        height: 0;
-        position: absolute;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-bottom: 8px solid white;
-        top: -8px;
-        left: 50%;
-        margin-left: -8px;
-    }
-    
-    .dropdownContain {
-        /* width: 150px; */
-        position: absolute;
-        z-index: 2;
-        top: -400px;
-        left: -30px;
-    }
-    
-    .dropOut {
-        width: 180px;
-        background: white;
-        float: left;
-        position: relative;
-        margin-top: 0px;
-        opacity: 0;
-        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
-        -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
-        box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
-        -webkit-transition: all .1s ease-out;
-        -moz-transition: all .1s ease-out;
-        -ms-transition: all .1s ease-out;
-        -o-transition: all .1s ease-out;
-        transition: all .1s ease-out;
-    }
-    
-    .dropOut ul {
-        float: left;
-        padding: 10px 0;
-    }
-    
-    .dropOut ul li {
-        text-align: left;
-        float: left;
-        width: 125px;
-        padding: 12px 0 10px 15px;
-        margin: 0px 20px;
-        color: #4d4d4d;
-        list-style: none;
-        -webkit-transition: background .1s ease-out;
-        -moz-transition: background .1s ease-out;
-        -ms-transition: background .1s ease-out;
-        -o-transition: background .1s ease-out;
-        transition: background .1s ease-out;
-        cursor: pointer;
-        font-size: 17px;
-        font-weight: 400;
-    }
-    
-    .dropOut ul li a {
-        color: #4d4d4d;
-        font-weight: 400;
-        text-decoration: none;
-    }
-    
-    .dropOut ul li:hover {
-        color: #ea002c;
-        font-weight: 500;
-    }
-    .dropOut ul li a:hover {
-        color: #ea002c;
-        font-weight: 500;
-    }
-    </style>
+                <link href="/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" />
+                <link href="/css/bootstrap-grid.min.css?v=3.3.7" rel="stylesheet" />
+                <link href="/css/common.css?ver190408" rel="stylesheet" />
+                <link rel="stylesheet" href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/main_body_first.css"> 
+                <form action="/logout" method="post">
+                    <nav class="navbar-custom">
 
-<form action="/logout" method="post">
-	<nav class="navbar-custom">
-
-		<div id="nav-top-menu-btns">
-		
-			<div style="width:1380px;padding: 0 0;margin: 0 auto">
-				<div style="display: inline-block; margin-right:80px; padding-bottom:18px; vertical-align:bottom;"><a href="testmain.html"><img src="asset\logo.png"></a></div>
-				<div style="display: inline-block;vertical-align: bottom; padding-top:27px; width:calc(100% - 260px);">
-					<div style="display: inline-block;">
-	 					<button id="btn-navi-menu" type="button"></button>
-					</div>
-					
-					<div style="display: inline-block;margin-left: 56px; vertical-align:bottom;">
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='pegasus\history'">PEGASUS</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="pegasus\history\history.html">연혁</a></li>
-                                        <li><a href="asset/emblem/emblem.html">엠블램</a></li>
-                                        <li><a href="asset/emblem/emblem.html">구단정보</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='/players/list?position=coach'">PLAYERS</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="/players/list?position=coach">선수</a></li>
-                                        <li><a href="/players/list?position=coach">매니저</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='/game/schedule'">GAME</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="/game/schedule">경기일정</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='/media/news'">MEDIA</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="" onclick="window.open('https://www.instagram.com/kwu_pegasus/')">Instagram</a></li>
-										<li><a href="/media/photo">Photo</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='/fan/sns'">YB</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="/YB/sns">YB 공지</a></li>
-                                        <li><a href="/YB/sns">YB 일정</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="drop">
-							<button type="button" class="btn-top-menu" onclick="location.href='/stadium/info'">OB</button>
-							<div class="dropdownContain">
-								<div class="dropOut">
-									<div class="triangle"></div>
-									<ul>
-										<li><a href="/stadium/info">OB 공지</a></li>
-										<li><a href="/stadium/parking">OB 일정</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-							
-					</div>
-					
-				</div>
-			</div>
-		</div>
-        <!-- menu bg img -->
-		<div id="menu-backgroud" style="width: 100%;padding: 0 0px">
-			<div id="img-top-main" style="width:100%; background:#241012 url(/img/main/main_banner.jpg) no-repeat center bottom;
-			height:560px; display:block">
-			
-			</div>
-			
-			<div id="img-top-menu-bg" style="display: none; width:100%;height:560px;"></div>
-			<div style="width: 100%;max-width: 1380px; margin: 0 auto">
-				<div id="menu-title-bg" style="height: 400px;text-align: center;display:none; padding-top: 210px">
-					<!-- WYVERNS -->
-					
-					
-					
-					<!-- GAME -->
-					
-					
-					
-					<!-- MEDIA -->
-					
-					
-					<!-- FAN -->
-					
-					
-					<!-- PLAYERS -->
-					
-					
-					
-					
-					
-					
-					<!-- FAN -->
-					
-					
-					
-					<!-- FAQ -->
-					
-					<!--  -->
-					
-					
-					
-				</div>
-				
-				<!-- <img id="img-top-main" src="/img/top/sk_web_main_img.png" style="display:block">
-				
-				<img id="img-top-menu-bg" src="/img/top/main_w_logo.png" style="display: none"> -->
-			</div>
-			
-		</div>
+                        <div id="nav-top-menu-btns">
+                        
+                            <div style="width:1380px;padding: 0 0;margin: 0 auto">
+                                <div style="display: inline-block; margin-right:80px; padding-bottom:18px; vertical-align:bottom;"><a href="testmain.html"><img src="main_assets/logo.png"></a></div>
+                                <div style="display: inline-block;vertical-align: bottom; padding-top:27px; width:calc(100% - 260px);">
+                                    <div style="display: inline-block;">
+                                        <button id="btn-navi-menu" type="button"></button>
+                                    </div>
+                                    
+                                    <div style="display: inline-block;margin-left: 56px; vertical-align:bottom;">
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='pegasus\history'">PEGASUS</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="pegasus\history\history.html">연혁</a></li>
+                                                        <li><a href="pegasus/emblem/emblem.html">엠블램</a></li>
+                                                        <li><a href="pegasus/info/info.html">구단정보</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='/players/list?position=coach'">PLAYERS</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="/players/list?position=coach">선수</a></li>
+                                                        <li><a href="/players/list?position=coach">매니저</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='/game/schedule'">GAME</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="/game/schedule">경기일정</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='/media/news'">MEDIA</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="" onclick="window.open('https://www.instagram.com/kwu_pegasus/')">Instagram</a></li>
+                                                        <li><a href="/media/photo">Photo</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='/fan/sns'">YB</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="/YB/sns">YB 공지</a></li>
+                                                        <li><a href="/YB/sns">YB 일정</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <button type="button" class="btn-top-menu" onclick="location.href='/stadium/info'">OB</button>
+                                            <div class="dropdownContain">
+                                                <div class="dropOut">
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><a href="/stadium/info">OB 공지</a></li>
+                                                        <li><a href="/stadium/parking">OB 일정</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- menu bg img -->
+                        <div id="menu-backgroud" style="width: 100%;padding: 0 0px">
+                            <div id="img-top-main" style="width:100%; background:#241012 url(/img/main/main_banner.jpg) no-repeat center bottom;
+                            height:560px; display:block">
+                            
+                            </div>
+                            
+                            <div id="img-top-menu-bg" style="display: none; width:100%;height:560px;"></div>
+                            <div style="width: 100%;max-width: 1380px; margin: 0 auto">
+                                <div id="menu-title-bg" style="height: 400px;text-align: center;display:none; padding-top: 210px">
+                                    <!-- WYVERNS -->
+                                    
+                                    
+                                    
+                                    <!-- GAME -->
+                                    
+                                    
+                                    
+                                    <!-- MEDIA -->
+                                    
+                                    
+                                    <!-- FAN -->
+                                    
+                                    
+                                    <!-- PLAYERS -->
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <!-- FAN -->
+                                    
+                                    
+                                    
+                                    <!-- FAQ -->
+                                    
+                                    <!--  -->
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                <!-- <img id="img-top-main" src="/img/top/sk_web_main_img.png" style="display:block">
+                                
+                                <img id="img-top-menu-bg" src="/img/top/main_w_logo.png" style="display: none"> -->
+                            </div>
+                            
+                        </div>
