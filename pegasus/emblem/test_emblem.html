@@ -1,129 +1,403 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1500, initial-scale=1">
-    <meta name="facebook-domain-verification" content="rg6go5h45qivg7wx7nn9qeanzjnsxc" />
-    <link rel="stylesheet" href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/main_head.css"> 
-    <title>KWU PEGASUS</title>
+<!-- saved from url=(0040)http://www.ssglanders.com/landers/emblem -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<meta name="viewport" content="width=1500, initial-scale=1">
+<title>SSG LANDERS</title>
+
+<style>
+.btn-tab {
+	display: inline-block;
+	width: 457px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #aaaaaa;
+	background: #FAFAFA;
+	text-align: center;
+}
+
+#tab1, #tab2, #tab3 {
+	border-right: 1px solid #d2d2d2;
+	border-left: 1px solid #d2d2d2;
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 2px solid #c01c32;
+}
+
+.btn-tab input[type=radio] {
+	display: none;
+}
+
+.btn-tab label {
+	margin-top: 14px;
+	width: 100%;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+.btn-tab.active label {
+	font-weight: 500;
+}
+
+.btn-tab+.btn-tab {
+	border-left: none;
+}
+/* .btn-tab.active { */
+#tab1.active, #tab2.active, #tab3.active {
+	color: #c01c32;
+	border-top: 2px solid #c01c32;
+	border-right: 2px solid #c01c32;
+	border-left: 2px solid #c01c32;
+	border-bottom: none;
+	background: none;
+}
+
+#tab1:not(.active) {
+	border-right: none;
+}
+
+#tab2:not(.active)+#tab3:not(.active) {
+	border-left: none;
+}
+
+.tab-box {
+	padding-top: 30px;
+}
+
+#tab-logo .row .col img {
+	width: 100%;
+}
+
+
+.box-emblem {
+	padding: 50px 0px 50px 0px;
+}
+.box-emblem .row {
+	margin:0;
+}
+.box-emblem .col {
+	padding:0;
+}
+.box-emblem img {
+	width: 100%;
+}
+.box-emblem-download-btn {
+	text-align: right;
+	margin-top: 38px;
+}
+.box-emblem-half {
+	display: inline-block;
+	width: 50%;
+}
+
+</style>
 </head>
+<body>
 
-    <body>
-        <div class="wrapper">
-            <div>
-                <link href="/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" />
-                <link href="/css/bootstrap-grid.min.css?v=3.3.7" rel="stylesheet" />
-                <link href="/css/common.css?ver190408" rel="stylesheet" />
-                <link rel="stylesheet" href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/main_body_first.css"> 
-                <form action="/logout" method="post">
-                    <nav class="navbar-custom">
+	
 
-                        <div id="nav-top-menu-btns">
-                        
-                            <div style="width:1380px;padding: 0 0;margin: 0 auto">
-                                <div style="display: inline-block; margin-right:80px; padding-bottom:18px; vertical-align:bottom;"><a href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/testmain.html"><img src="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/logo.png"></a></div>
-                                <div style="display: inline-block;vertical-align: bottom; padding-top:27px; width:calc(100% - 260px);">
-                                    <div style="display: inline-block;">
-                                        <button id="btn-navi-menu" type="button"></button>
-                                    </div>
-                                    
-                                    <div style="display: inline-block;margin-left: 56px; vertical-align:bottom;">
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='pegasus\history'">PEGASUS</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="pegasus\history\history.html">연혁</a></li>
-                                                        <li><a href="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/pegasus/emblem/emblem.html">엠블램</a></li>
-                                                        <li><a href="pegasus/info/info.html">구단정보</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='/players/list?position=coach'">PLAYERS</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="/players/list?position=coach">선수</a></li>
-                                                        <li><a href="/players/list?position=coach">매니저</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='/game/schedule'">GAME</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="/game/schedule">경기일정</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='/media/news'">MEDIA</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="" onclick="window.open('https://www.instagram.com/kwu_pegasus/')">Instagram</a></li>
-                                                        <li><a href="/media/photo">Photo</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='/fan/sns'">YB</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="/YB/sns">YB 공지</a></li>
-                                                        <li><a href="/YB/sns">YB 일정</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="drop">
-                                            <button type="button" class="btn-top-menu" onclick="location.href='/stadium/info'">OB</button>
-                                            <div class="dropdownContain">
-                                                <div class="dropOut">
-                                                    <div class="triangle"></div>
-                                                    <ul>
-                                                        <li><a href="/stadium/info">OB 공지</a></li>
-                                                        <li><a href="/stadium/parking">OB 일정</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-		<div id="menu-backgroud" style="width: 100%;padding: 0 0px;background:#241012">
-			<div id="img-top-main" style="width:100%; background:#241012 url(/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/logo.png) no-repeat center bottom;
+
+
+
+<!-- Navbar -->
+<link href="./SSG LANDERS_files/bootstrap.min.css" rel="stylesheet">
+<link href="./SSG LANDERS_files/bootstrap-grid.min.css" rel="stylesheet">
+<link href="./SSG LANDERS_files/common.css" rel="stylesheet">
+<style>
+.navbar-custom {
+	width: 100%;
+	min-width: 1380px;
+	z-index: 1000;
+	color: #fff;
+	background: #c01c32;
+}
+
+.navbar-custom button {
+	color: #fff;
+	background: none;
+	border: none;
+	line-height: 2.6;
+    padding-bottom: 5px;
+}
+
+.btn-top-menu {
+	width: 125px;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.btn-top-submenu {
+	padding: 0 10px
+}
+
+#btn-navi-menu {
+	width: 50px;
+	height: 50px;
+	background-image: url(/img/top/top_ic_menu.png);
+	background-repeat: no-repeat;
+	border: none;
+	outline: none;
+}
+
+#btn-navi-menu.active {
+	background-image: url(/img/top/top_ic_close.png);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#nav-top-menu-btns {
+	position: absolute;
+	width: 100%;
+	min-width: 1380px;
+	padding: 36px 0px 0px 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	z-index: 100;
+}
+
+#nav-top-menu-btns.active {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#menu-dim table th {
+	font-size: 18px;
+	font-weight: 700;
+	border-left: 1px solid rgb(255, 255, 255, 0.3);
+	padding: 10px 20px;
+	opacity: 1;
+	line-height: 1;
+}
+
+#menu-dim table td {
+	border-left: 1px solid rgb(255, 255, 255, 0.3);
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+#menu-dim a {
+	color: white;
+}
+
+#menu-backgroud span {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 2.3;
+	opacity: 0.8;
+}
+
+/* drop down */
+.drop {
+	display: inline-block;
+	position: relative;
+}
+
+.drop:hover .dropdownContain {
+	top: 50px;
+}
+.drop:hover .dropOut {
+	opacity: 1;
+}
+
+.dropOut .triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+
+.dropdownContain {
+	/* width: 150px; */
+	position: absolute;
+	z-index: 2;
+	top: -400px;
+	left: -30px;
+}
+
+.dropOut {
+	width: 180px;
+	background: white;
+	float: left;
+	position: relative;
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+
+.dropOut ul {
+	float: left;
+	padding: 10px 0;
+}
+
+.dropOut ul li {
+	text-align: left;
+	float: left;
+	width: 125px;
+	padding: 12px 0 10px 15px;
+	margin: 0px 20px;
+	color: #4d4d4d;
+	list-style: none;
+	-webkit-transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-o-transition: background .1s ease-out;
+	transition: background .1s ease-out;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.dropOut ul li a {
+	color: #4d4d4d;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.dropOut ul li:hover {
+	color: #ea002c;
+	font-weight: 500;
+}
+.dropOut ul li a:hover {
+	color: #ea002c;
+	font-weight: 500;
+}
+</style>
+
+<form action="http://www.ssglanders.com/logout" method="post">
+	<nav class="navbar-custom">
+
+		<div id="nav-top-menu-btns">
+
+			<div style="width:1380px;padding: 0 0;margin: 0 auto">
+				<div style="display: inline-block; margin-right:80px; padding-bottom:18px; vertical-align:bottom;"><a href="http://www.ssglanders.com/main"><img src="./SSG LANDERS_files/logo.png"></a></div>
+				<div style="display: inline-block;vertical-align: bottom; padding-top:27px; width:calc(100% - 260px);">
+					<div style="display: inline-block;">
+	 					<button id="btn-navi-menu" type="button"></button>
+					</div>
+
+					<div style="display: inline-block;margin-left: 56px; vertical-align:bottom;">
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/landers/history&#39;">LANDERS</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/landers/history">연혁</a></li>
+										<li><a href="http://www.ssglanders.com/landers/emblem">엠블럼</a></li>
+										<li><a href="http://www.ssglanders.com/landers/sponsor">후원사</a></li>
+										<li><a href="http://www.ssglanders.com/landers/info">구단정보</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/players/list?position=coach&#39;">PLAYERS</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/players/list?position=coach">코칭 스태프</a></li>
+										<li><a href="http://www.ssglanders.com/players/list?position=pitcher">투수</a></li>
+										<li><a href="http://www.ssglanders.com/players/list?position=catcher">포수</a></li>
+										<li><a href="http://www.ssglanders.com/players/list?position=infielder">내야수</a></li>
+										<li><a href="http://www.ssglanders.com/players/list?position=outfielder">외야수</a></li>
+										<li><a href="http://www.ssglanders.com/players/list?armyPlayerYn=Y">군입대 선수</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/game/schedule&#39;">GAME</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/game/schedule">경기일정</a></li>
+										<li><a href="http://www.ssglanders.com/game/ticket">입장권 안내</a></li>
+										<li><a href="http://www.ssglanders.com/game/group">단체관람 신청</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/media/news&#39;">MEDIA</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/media/news">랜더스 소식</a></li>
+										<li><a href="http://www.ssglanders.com/media/photo">랜더스 포토</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/fan/sns&#39;">FAN</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/fan/sns">SNS</a></li>
+										<li><a href="http://www.ssglanders.com/fan/cheer">응원단</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href=&#39;/stadium/info&#39;">STADIUM</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="http://www.ssglanders.com/stadium/info">구장소개</a></li>
+										<li><a href="http://www.ssglanders.com/stadium/parking">주차안내</a></li>
+										<li><a href="http://www.ssglanders.com/stadium/map">찾아오시는 길</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div style="display:block; float:right">
+					<div style="text-align: right;margin-top: 5px;">
+						<button type="button" class="btn-top-submenu" onclick="window.open(&#39;https://www.ssglandersstore.co.kr/&#39;)">SHOP</button>
+						|
+						<button type="button" class="btn-top-submenu" onclick="location.href=&#39;/contact&#39;">CONTACT US</button>
+<!-- 						<button type="button" class="btn-top-submenu" onclick="location.href='/faq'">FAQ</button> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div>
+
+		<!-- menu bg img -->
+		<div id="menu-backgroud" style="width: 100%;padding: 0 0px">
+			<div id="img-top-main" style="width:100%; background:#241012 url(/img/main/main_banner.jpg) no-repeat center bottom;
 			height:560px; display:none">
 
 			</div>
 
 			<div id="img-top-menu-bg" style="display: none; width:100%;height:560px;"></div>
 			<div style="width: 100%;max-width: 1380px; margin: 0 auto">
-				<div id="menu-title-bg" style="height: 560px;text-align: center;display:block; padding-top: 210px">
+				<div id="menu-title-bg" style="height: 400px;text-align: center;display:block; padding-top: 210px">
 					<!-- WYVERNS -->
 					
 					
-						<h2><br><br>엠블럼<br/><br/></h2>
-						<span>KWU PEGASUS의 엠블럼과 로고 입니다.</span>
-                        
-                    </div>
-                    
+						<h2>엠블럼</h2>
+						<span>승리를 부르는 SSG랜더스의 엠블럼과 로고 입니다.</span>
 					
 					
 					
@@ -163,7 +437,148 @@
 
 		</div>
 
-		<p style="font-size: 15px; color: #241010; margin: 60px 0;">
+		<!-- menu detail -->
+		<div id="menu-dim" style="position:absolute;width:100%;height:444px;top:114px; display: none">
+			<div style="width:100%;height:100%;background: rgb(0, 0, 0, 0.1)">
+				<div style="width: 1380px;height:100%;margin: 0 auto">
+					<table style="width: 100%;height: 100%">
+						<colgroup>
+							<col width="230px">
+							<col width="230px">
+							<col width="230px">
+							<col width="230px">
+							<col width="230px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>LANDERS</th>
+								<th>PLAYERS</th>
+								<th>GAME</th>
+								<th>MEDIA</th>
+								<th>FAN</th>
+								<th>STADIUM</th>
+							</tr>
+							<tr>
+								<td><a href="http://www.ssglanders.com/landers/history">연혁</a></td>
+								<td><a href="http://www.ssglanders.com/players/list?position=coach">코칭 스태프</a></td>
+								<td><a href="http://www.ssglanders.com/game/schedule">경기일정</a></td>
+								<td><a href="http://www.ssglanders.com/media/news">랜더스 소식</a></td>
+								<td><a href="http://www.ssglanders.com/fan/sns">SNS</a></td>
+								<td><a href="http://www.ssglanders.com/stadium/info">구장소개</a></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.ssglanders.com/landers/emblem">엠블럼</a></td>
+								<td><a href="http://www.ssglanders.com/players/list?position=pitcher">투수</a></td>
+								<td><a href="http://www.ssglanders.com/game/ticket">입장권 안내</a></td>
+								<td><a href="http://www.ssglanders.com/media/photo">랜더스 포토</a></td>
+								<td><!-- <a href="/fan/cheer">응원단</a> --></td>
+								<td><a href="http://www.ssglanders.com/stadium/parking">주차안내</a></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.ssglanders.com/landers/sponsor">후원사</a></td>
+								<td><a href="http://www.ssglanders.com/players/list?position=catcher">포수</a></td>
+								<td><a href="http://www.ssglanders.com/game/group">단체관람 신청</a></td>
+								<td></td>
+								<td></td>
+								<td><a href="http://www.ssglanders.com/stadium/map">찾아오시는 길</a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="http://www.ssglanders.com/players/list?position=infielder">내야수</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="http://www.ssglanders.com/players/list?position=outfielder">외야수</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="http://www.ssglanders.com/players/list?armyPlayerYn=Y">군입대 선수</a><br><br><br><br><br></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<!-- 로그인 정보 -->
+
+		
+
+		
+	</nav>
+</form>
+<script src="./SSG LANDERS_files/jquery-3.3.1.min.js"></script>
+<script src="./SSG LANDERS_files/bootstrap.min.js"></script>
+<script>
+	$("#btn-navi-menu").click(function() {
+		if($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$("#nav-top-menu-btns").removeClass("active");
+			$("#menu-dim").hide();
+			$("#img-top-menu-bg").hide();
+
+			if(false) {
+				$("#img-top-main").show();
+			} else {
+				$("#menu-title-bg").show();
+			}
+		} else {
+			$(this).addClass("active");
+			$("#nav-top-menu-btns").addClass("active");
+			$("#menu-dim").show();
+			$("#img-top-menu-bg").show();
+
+			if(false) {
+				$("#img-top-main").hide();
+			} else {
+				$("#menu-title-bg").hide();
+			}
+		}
+	});
+
+	function logout(obj) {
+		var result = confirm('로그아웃 하시겠습니까?');
+		if(result) {
+			obj.submit();
+		}
+	}
+
+	function closePopup() {
+		$("#popup").remove();
+	}
+
+</script>
+
+<!-- End Navbar -->
+
+
+	<div class="wrapper-body">
+
+		<div style="margin-bottom: 30px">
+			<img src="./SSG LANDERS_files/step_home.png"> <img src="./SSG LANDERS_files/step_arrow.png"> <span class="depth1-text">LANDERS</span> <img src="./SSG LANDERS_files/step_arrow.png"> <span class="depth2-text">엠블럼 </span>
+		</div>
+
+		<div id="box-tab-btns" style="display: flex;">
+			<div id="tab1" class="btn-tab active"><input type="radio" name="radio-emblem" id="btn-tab-emblem" checked="checked" value="E"><label for="btn-tab-emblem">엠블럼</label></div>
+			<div id="tab2" class="btn-tab"><input type="radio" name="radio-emblem" id="btn-tab-character" value="C"><label for="btn-tab-character">마스코트</label></div>
+			<div id="tab3" class="btn-tab"><input type="radio" name="radio-emblem" id="btn-tab-logo" value="L"><label for="btn-tab-logo">로고</label></div>
+		</div>
+
+		<p style="font-size: 22px; color: #999999; margin: 60px 0;">
 			<span class="primary-red-text">*</span>개인의 목적으로 사용이 가능하나 <span class="secondary-color-text" style="font-weight:500;">상업적 목적이나 용도</span>로 사용될 경우 <span class="secondary-color-text" style="font-weight:500;">저작권법에 의해 처벌</span>을 받으실
 			수 있습니다.
 		</p>
@@ -171,32 +586,641 @@
 		<!-- 엠블럼 -->
 		<div id="tab-emblem" class="tab-box active">
 
-			<span style ="font-size: 20pt;font-style: normal; font-weight: bold;" >KWU PEGASUS 구단 엠블럼</span>
+			<span class="text-title-ball">SSG랜더스 구단 엠블럼</span>
 			
 			<div class="box-emblem">
 				<div class="row">
 					<div class="col">
-						<img src="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/white-logo.png" alt="KWU PEGASUS 구단 엠블럼">
+						<img src="./SSG LANDERS_files/ssg_emblem1.png" alt="SSG랜더스 구단 엠블럼">
+						<div class="box-emblem-download-btn">
+							<button type="button" onclick="location.href=&#39;http://ssglanders.com/Common/Attach/download/emblem/ssg_baseballclub_landers_emblem.zip&#39;" class="btn-img"><img src="./SSG LANDERS_files/ssg_web_emblem_btn.png"></button>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<span class="text-title-ball">KWU PEAGSUS 워드마크</span>
+			<span class="text-title-ball">SSG랜더스 캐치프레이즈</span>
 			
 			<div class="box-emblem">
 				<div class="row">
-					<div class="col">
-                        <img src="/Users/ijunhyeong/Desktop/KWUbaseballclubHomepage/main_assets/team_mark.png" alt="KWU PEGASUS 워드마크">
-                    </div>
+					<div class="col"><img src="./SSG LANDERS_files/ssg_emblem3.jpg" alt="SSG랜더스 캐치프레이즈"></div>
+				</div>
+				<div class="box-emblem-download-btn">
+					<button type="button" onclick="location.href=&#39;http://ssglanders.com/Common/Attach/download/emblem/ssg_baseballclub_landers_catchphrase.zip&#39;" class="btn-img"><img src="./SSG LANDERS_files/ssg_web_emblem_btn.png"></button>
 				</div>
 			</div>
 			
 		</div>
-        
+
+
+		<!-- 마스코트 -->
+		<div id="tab-character" class="tab-box" style="display: none; margin-bottom: 100px;">
+
+			<span class="text-title-ball">SSG랜더스 마스코트</span>
+			<p class="s-txt">랜더스 선수와 팬에게 용기와 사랑, 위로를 주는 친구!  SSG랜더스를 대표하는 마스코트  <strong class="color-gold">랜디</strong> 를 소개합니다.</p>
+			
+			<div class="box-emblem">
+				<div class="row">
+					<img src="./SSG LANDERS_files/ssg_mascots1.png" alt="SSG랜더스 마스코트" style="margin-bottom:18px">
+					<img src="./SSG LANDERS_files/ssg_mascots2.png" alt="SSG랜더스 마스코트">
+				</div>
+				<div class="box-emblem-download-btn" style="text-align:center;">
+					<button type="button" class="btn-img" onclick="location.href=&#39;http://ssglanders.com/Common/Attach/download/emblem/ssg_baseballclub_landers_mascot.zip&#39;"><img src="./SSG LANDERS_files/ssg_web_emblem_btn.png"></button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 로고 -->
+		<div id="tab-logo" class="tab-box" style="display: none;margin-right: 9px; margin-bottom: 100px;">
+			<!--  -->
+			<span class="text-title-ball">SSG랜더스 워드마크</span>
+			
+			<div class="box-emblem">
+				<div class="row">
+					<div class="col" style="padding-right:10px;"><img src="./SSG LANDERS_files/ssg_wordmark1.png" alt="SSG랜더스 워드마크"></div>
+					<div class="col" style="padding:0 10px;"><img src="./SSG LANDERS_files/ssg_wordmark2.png" alt="SSG랜더스 워드마크"></div>
+					<div class="col" style="padding-left:10px;"><img src="./SSG LANDERS_files/ssg_wordmark3.png" alt="SSG랜더스 워드마크"></div>
+				</div>
+				<div class="box-emblem-download-btn">
+					<button type="button" class="btn-img" onclick="location.href=&#39;http://ssglanders.com/Common/Attach/download/emblem/ssg_baseballclub_landers_wordmark.zip&#39;"><img src="./SSG LANDERS_files/ssg_web_emblem_btn.png"></button>
+				</div>
+			</div>
+			
+			<span class="text-title-ball">SSG랜더스 심볼</span>
+			
+			<div class="box-emblem">
+				<div class="row">
+					<div class="col" style="padding-right:20px;"><img src="./SSG LANDERS_files/ssg_symbol1.png" alt="SSG랜더스 심볼"></div>
+					<div class="col" style="padding-left:20px;"><img src="./SSG LANDERS_files/ssg_symbol2.png" alt="SSG랜더스 심볼"></div>
+				</div>
+				<div class="box-emblem-download-btn">
+					<button type="button" class="btn-img" onclick="location.href=&#39;http://ssglanders.com/Common/Attach/download/emblem/ssg_baseballclub_landers_symbol.zip&#39;"><img src="./SSG LANDERS_files/ssg_web_emblem_btn.png"></button>
+				</div>
+			</div>
+			
+			
+		</div>
 
 	</div>
 
-		<!-- menu detail -->
-		
+	
 
+
+
+<!-- footer -->
+<style>
+.footer {
+	background: #121212;
+}
+
+.footer span, .footer p {
+	color: #A4A4A4;
+	line-height: 1.8;
+	font-size: 13px;
+	font-weight: 200;
+	letter-spacing:0;
+}
+.footer p {
+	font-size:12px;
+}
+.copyright {
+	position:relative;
+}
+.copyright .row .col {
+	padding: 0 9px;
+}
+
+.copyright p span {
+	padding-right: 10px;
+}
+
+.copyright p span:not (:first-child ) {
+	padding-left: 10px;
+}
+
+.copyright a {
+	color: #A4A4A4;
+}
+
+.footer .selectbox {
+display:none;
+	position: absolute;
+	width: 174px;
+	background:#262626;
+	border-radius:20px;
+	z-index: 1;
+	right: 0;
+	top:120px;
+}
+
+.footer .selectbox:before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	width: 10px;
+	height: 10px;
+	border-left: 3px solid #646464;
+	border-top: 3px solid #646464;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.footer .selectbox label {
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	padding: .6em .5em;
+	font-weight: 500;
+	z-index: -1;
+	margin:0;
+	color:#646464;
+}
+
+.footer .selectbox select {
+	width: 100%;
+	height: 40px;
+	line-height: normal;
+	font-family: inherit;
+	padding: .8em .5em;
+	border: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.slider img {
+	width: 130px;
+}
+
+#box-sponsor .btn-img {
+	width: 30px;
+	height:30px;
+	border: 1px solid #d2d2d2;
+	position:relative;
+}
+#box-sponsor .btn-img img {
+	position:absolute;
+	left:50%;
+	top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+</style>
+
+<link rel="stylesheet" href="./SSG LANDERS_files/slick.css">
+<script src="./SSG LANDERS_files/slick.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+
+		var currentSlide = $(".slider").slick({
+			infinite : true,
+			slidesToShow : 5,
+			dots : false,
+			autoplay : true,
+			autoplaySpeed : 5000,
+			arrows : false,
+			slidesToScroll : 3
+		});
+
+		$("#btn-sponsor-play").click(function() {
+			currentSlide.slick('slickPlay');
+		});
+
+		$("#btn-sponsor-pause").click(function() {
+			currentSlide.slick('slickPause');
+		});
+	});
+</script>
+
+<!-- 후원사 -->
+<div id="box-sponsor" style="height:100px;border-top:2px solid rgba(0, 0, 0, 0.2);">
+	<div style="width: 1440px; margin: 0 auto;padding: 23px 0 0 0;display: flex">
+		<div style="width: 1350px; display: inline-block;">
+			<div class="slider slick-initialized slick-slider">
+
+				<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 24570px; transform: translate3d(-6210px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.kki-digital.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_24.png" alt="키노톤"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://elroel.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_25.png" alt="엘로엘"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.koreanair.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_26.png" alt="대한항공"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.smartbaro.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_27.png" alt="국제바로병원"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.isu.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_28.png" alt="ISU"></a>
+				</div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.ssg.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_01.png" alt="SSG"></a>
+				</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.emart.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_02.png" alt="이마트"></a>
+				</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegae.com/index.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_03.png" alt="신세계"></a>
+				</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegaetvshopping.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_04.png" alt="신세계 TV 쇼핑"></a>
+				</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.starbucks.co.kr/index.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_05.png" alt="스타벅스"></a>
+				</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.emarteveryday.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_06.png" alt="emart에브리데이"></a>
+				</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.starfield.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_07.png" alt="스타필드"></a>
+				</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.shinsegae-lnb.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_08.png" alt="신세계 L&amp;B"></a>
+				</div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://emart24.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_09.png" alt="Emart24"></a>
+				</div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.sivillage.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_10.png" alt="신세계 인터내셔날 "></a>
+				</div><div class="slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegaefood.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_11.png" alt="신세계 푸드 "></a>
+				</div><div class="slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.premiumoutlets.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_12.png" alt="프리미엄 아울렛 신세계 사이먼 "></a>
+				</div><div class="slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegae-enc.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_13.png" alt="신세계 건설 "></a>
+				</div><div class="slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.shinsegaecentralcity.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_14.png" alt="신세계 센트럴 시티 "></a>
+				</div><div class="slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.josunhotel.com/intro.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_15.png" alt="조선호텔"></a>
+				</div><div class="slick-slide" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.gmarket.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_16.png" alt="G마켓"></a>
+				</div><div class="slick-slide" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://shinsegae-inc.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_17.png" alt="신세계 I&amp;C"></a>
+				</div><div class="slick-slide" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.wconcept.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_18.png" alt="W CONCEPT"></a>
+				</div><div class="slick-slide slick-current slick-active" data-slick-index="18" aria-hidden="false" tabindex="0" style="width: 270px;">
+					<a href="http://www.cjpowercast.com/" target="_blank" tabindex="0"><img src="./SSG LANDERS_files/sponsor_partner_01.png" alt="cj파워캐스트 "></a>
+				</div><div class="slick-slide slick-active" data-slick-index="19" aria-hidden="false" tabindex="0" style="width: 270px;">
+					<a href="http://www.interpark.com/" target="_blank" tabindex="0"><img src="./SSG LANDERS_files/sponsor_partner_02.png" alt="인터파크"></a>
+				</div><div class="slick-slide slick-active" data-slick-index="20" aria-hidden="false" tabindex="0" style="width: 270px;">
+					<a href="https://www.dynafit.co.kr/" target="_blank" tabindex="0"><img src="./SSG LANDERS_files/sponsor_sponsor_01.png" alt="다이나핏 "></a>
+				</div><div class="slick-slide slick-active" data-slick-index="21" aria-hidden="false" tabindex="0" style="width: 270px;">
+					<a href="https://www.hyundaicard.com/" target="_blank" tabindex="0"><img src="./SSG LANDERS_files/sponsor_sponsor_02.png" alt="현대카드 "></a>
+				</div><div class="slick-slide slick-active" data-slick-index="22" aria-hidden="false" tabindex="0" style="width: 270px;">
+					<a href="http://home.dodram.com/" target="_blank" tabindex="0"><img src="./SSG LANDERS_files/sponsor_sponsor_03.png" alt="도드람한돈 "></a>
+				</div><div class="slick-slide" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.bavarian.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_04.png" alt="바바리안 모터스"></a>
+				</div><div class="slick-slide" data-slick-index="24" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.hitejinro.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_05.png" alt="하이트진로"></a>
+				</div><div class="slick-slide" data-slick-index="25" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.gbattery.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_06.png" alt="로켓(세방전지) "></a>
+				</div><div class="slick-slide" data-slick-index="26" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.dbcons.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_09.png" alt="대방건설 "></a>
+				</div><div class="slick-slide" data-slick-index="27" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://plushospital.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_10.png" alt="플러스병원"></a>
+				</div><div class="slick-slide" data-slick-index="28" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.selexmall.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_11.png" alt="셀렉스"></a>
+				</div><div class="slick-slide" data-slick-index="29" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.hangileye.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_12.png" alt="한길안과병원"></a>
+				</div><div class="slick-slide" data-slick-index="30" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://himchangeneral.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_13.png" alt="인천힘찬종합병원"></a>
+				</div><div class="slick-slide" data-slick-index="31" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://minddental.co.kr/main/index" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_20.png" alt="마인드 치과"></a>
+				</div><div class="slick-slide" data-slick-index="32" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.walterwalker.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_21.png" alt="SIDAS"></a>
+				</div><div class="slick-slide" data-slick-index="33" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://pocarisweat.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_14.png" alt="포카리스웨트"></a>
+				</div><div class="slick-slide" data-slick-index="34" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://3wbmall.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_15.png" alt="웰빙헬스팜"></a>
+				</div><div class="slick-slide" data-slick-index="35" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.yeonsu.go.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_16.png" alt="연수구"></a>
+				</div><div class="slick-slide" data-slick-index="36" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shell.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_17.png" alt="Shell"></a>
+				</div><div class="slick-slide" data-slick-index="37" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinhan.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_23.png" alt="신한은행"></a>
+				</div><div class="slick-slide" data-slick-index="38" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.kki-digital.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_24.png" alt="키노톤"></a>
+				</div><div class="slick-slide" data-slick-index="39" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://elroel.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_25.png" alt="엘로엘"></a>
+				</div><div class="slick-slide" data-slick-index="40" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.koreanair.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_26.png" alt="대한항공"></a>
+				</div><div class="slick-slide" data-slick-index="41" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.smartbaro.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_27.png" alt="국제바로병원"></a>
+				</div><div class="slick-slide" data-slick-index="42" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.isu.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_28.png" alt="ISU"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="43" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.ssg.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_01.png" alt="SSG"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="44" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.emart.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_02.png" alt="이마트"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="45" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegae.com/index.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_03.png" alt="신세계"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="46" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegaetvshopping.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_04.png" alt="신세계 TV 쇼핑"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="47" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.starbucks.co.kr/index.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_05.png" alt="스타벅스"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="48" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.emarteveryday.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_06.png" alt="emart에브리데이"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="49" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.starfield.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_07.png" alt="스타필드"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="50" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.shinsegae-lnb.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_08.png" alt="신세계 L&amp;B"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="51" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://emart24.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_09.png" alt="Emart24"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="52" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.sivillage.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_10.png" alt="신세계 인터내셔날 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="53" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegaefood.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_11.png" alt="신세계 푸드 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="54" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.premiumoutlets.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_12.png" alt="프리미엄 아울렛 신세계 사이먼 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="55" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinsegae-enc.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_13.png" alt="신세계 건설 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="56" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.shinsegaecentralcity.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_14.png" alt="신세계 센트럴 시티 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="57" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.josunhotel.com/intro.do" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_15.png" alt="조선호텔"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="58" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.gmarket.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_16.png" alt="G마켓"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="59" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://shinsegae-inc.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_17.png" alt="신세계 I&amp;C"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="60" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.wconcept.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_family_18.png" alt="W CONCEPT"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="61" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.cjpowercast.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_partner_01.png" alt="cj파워캐스트 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="62" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.interpark.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_partner_02.png" alt="인터파크"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="63" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.dynafit.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_01.png" alt="다이나핏 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="64" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.hyundaicard.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_02.png" alt="현대카드 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="65" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://home.dodram.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_03.png" alt="도드람한돈 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="66" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.bavarian.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_04.png" alt="바바리안 모터스"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="67" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.hitejinro.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_05.png" alt="하이트진로"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="68" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.gbattery.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_06.png" alt="로켓(세방전지) "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="69" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.dbcons.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_09.png" alt="대방건설 "></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="70" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://plushospital.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_10.png" alt="플러스병원"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="71" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.selexmall.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_11.png" alt="셀렉스"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="72" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.hangileye.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_12.png" alt="한길안과병원"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="73" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://himchangeneral.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_13.png" alt="인천힘찬종합병원"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="74" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://minddental.co.kr/main/index" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_20.png" alt="마인드 치과"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="75" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.walterwalker.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_21.png" alt="SIDAS"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="76" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://pocarisweat.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_14.png" alt="포카리스웨트"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="77" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://3wbmall.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_15.png" alt="웰빙헬스팜"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="78" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.yeonsu.go.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_16.png" alt="연수구"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="79" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shell.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_17.png" alt="Shell"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="80" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.shinhan.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_23.png" alt="신한은행"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="81" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.kki-digital.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_24.png" alt="키노톤"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="82" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://elroel.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_25.png" alt="엘로엘"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="83" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.koreanair.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_26.png" alt="대한항공"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="84" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="http://www.smartbaro.com/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_27.png" alt="국제바로병원"></a>
+				</div><div class="slick-slide slick-cloned" data-slick-index="85" aria-hidden="true" tabindex="-1" style="width: 270px;">
+					<a href="https://www.isu.co.kr/" target="_blank" tabindex="-1"><img src="./SSG LANDERS_files/sponsor_sponsor_28.png" alt="ISU"></a>
+				</div></div></div>
+				
+				
+				
+				
+				
+				
+
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+
+
+				
+
+				
+				
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+
+
+				
+				
+				
+				
+				
+				
+			</div>
 		</div>
+		<div style="display: inline-block;background: rgb(255, 255, 255, 0.8)">
+			<div><button id="btn-sponsor-play" type="button" class="btn-img"><img src="./SSG LANDERS_files/sponsor_ic_play.png" alt="후원사 목록 재생"></button></div>
+			<div><button id="btn-sponsor-pause" type="button" class="btn-img"><img src="./SSG LANDERS_files/sponsor_ic_pause.png" alt="후원사 목록 멈춤"></button></div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+
+	<div class="copyright" style="width: 1030px; padding: 50px 15px 70px 15px; font-weight: 100; margin: 0 auto">
+		<div class="selectbox">
+	        <label for="select-nice">Family Site</label>
+	        <select id="select-nice" style="" onchange="javascript:goFamilyPage(this.value);">
+	          <option>Family Site</option>
+	          <option value="sk">SK(주)</option>
+	          <option value="sktelecom">SK TELECOM</option>
+	          <option value="tworld">T world</option>
+	          <option value="02">Biz T world</option>
+	          <option value="03">T world다이렉트</option>
+	          <option value="04">Partner on</option>
+	          <option value="tTogether">T together</option>
+
+	          <option value="15">NUGU</option>
+	          <option value="16">기업 T world</option>
+	          <option value="17">T wifi zone</option>
+	          <option value="18">ADT캡스</option>
+
+	          <option value="07">T.um</option>
+	          <option value="skplanet">SK planet</option>
+	          <option value="skhynix">SK hynix</option>
+	          <option value="skbroadband">SK broadband</option>
+	          <option value="sktelink">SK telink</option>
+	          <option value="08">SERVICE ACE</option>
+	          <option value="09">SERVICE TOP</option>
+	          <option value="13">SKT 캠퍼스리포터</option>
+
+	          <option value="19">SK 스포츠</option>
+	        </select>
+	    </div>
+
+		<div>
+			<a href="http://ssglanders.com/" target="_blank"><img alt="로고" src="./SSG LANDERS_files/footer_emblem.png"></a>
+
+			<div class="row" style="width: 300px; display: inline-block; margin-left: 50px;">
+				<a class="col" href="https://play.google.com/store/apps/details?id=com.skt.ilbs.skwyverns.app" target="_blank"><img alt="SSG 랜더스 링크" src="./SSG LANDERS_files/footer_sns_landers.png"></a> <a class="col" href="https://www.facebook.com/SSGlanders" target="_blank"><img alt="페이스북 링크" src="./SSG LANDERS_files/footer_sns_facebook.png"></a> <a class="col" href="https://www.instagram.com/ssglanders.incheon/" target="_blank"><img alt="인스타그램 링크" src="./SSG LANDERS_files/footer_sns_instagram.png"></a> <a class="col" href="https://www.youtube.com/c/SSGLANDERS" target="_blank"><img alt="유튜브 링크" src="./SSG LANDERS_files/footer_sns_youtube.png"></a>
+			</div>
+		</div>
+
+		<p style="margin-top: 20px;margin-bottom: 25px;">
+			<span id="txt-privacy"><a href="http://www.ssglanders.com/policy?pos=0&amp;type=1">개인정보처리방침</a></span> &nbsp; &nbsp; | &nbsp; &nbsp;
+			<span><a href="http://www.ssglanders.com/policy?pos=0&amp;type=2">&nbsp; 이용약관</a></span> &nbsp; &nbsp; | &nbsp; &nbsp;
+			<span><a href="http://www.ssglanders.com/policy?pos=0&amp;type=3">&nbsp; 이메일주소무단수집거부</a></span>
+			<!-- |<span>개인정보 수집 및 이용</span> -->
+		</p>
+
+		<p>주식회사 신세계야구단 대표이사 : 민경삼 &nbsp; &nbsp; | &nbsp; &nbsp; 주소 : 인천광역시 미추홀구 매소홀로 618(문학동) &nbsp; &nbsp; | &nbsp; &nbsp; 고객센터 전화번호 : 032-455-2600<br>
+		비시즌 운영시간 : 월-금 10:00~17:00 &nbsp; &nbsp; | &nbsp; &nbsp; 시즌 운영시간 :  홈경기 있는 주중/주말 : 경기 시작 5시간 전 ~ 경기 전 2시간 전까지 &nbsp; &nbsp; | &nbsp; &nbsp; 홈경기 없는 주중 : 10:00~17:00 (월요일, 홈경기 없는 주말 휴무)<br>
+		Copyright © 2021 신세계야구단 All right reserved.<br></p>
+	</div>
+
+</footer>
+
+<script>
+// 하단 Footer 페이지 이동
+function goFamilyPage(type){
+	if(type=="msafer"){
+		window.open("http://www.msafer.or.kr/index_new.jsp", '', '');
+	}else if(type=="sktelecom"){
+		window.open("http://www.sktelecom.com", '', '');
+	}else if(type=="tworld"){
+		window.open("http://www.tworld.co.kr", '', '');
+	}else if(type=="nate"){
+		window.open("http://www.nate.com", '', '');
+	}else if(type=="momu"){
+		window.open("http://www.momu.co.kr", '', '');
+	}else if(type=="melon"){
+		window.open("http://www.melon.com", '', '');
+	}else if(type=="cizle"){
+		window.open("http://cizle.nate.com", '', '');
+	}else if(type=="gxg"){
+		window.open("http://www.gxg.com", '', '');
+	}else if(type=="moneta"){
+		window.open("http://www.moneta.co.kr", '', '');
+	}else if(type=="sk"){
+		window.open("http://www.sk.com", '', '');
+	}else if(type=="lte"){
+		window.open("http://www.skt-lte.co.kr/contents/main.jsp", '', '');
+	}else if(type=="tTogether"){
+		window.open("http://ttogether.sktelecom.com", '', '');
+	}else if(type=="skplanet"){
+		window.open("http://www.skplanet.com", '', '');
+	}else if(type=="skbroadband"){
+		window.open("http://www.skbroadband.com", '', '');
+	}else if(type=="sktelink"){
+		window.open("http://www.sktelink.com", '', '');
+	}else if(type=="skhynix"){
+		window.open("http://www.skhynix.com", '', '');
+	}else if(type=="skcorp"){
+		window.open("http://corp.nate.com", '', '');
+	}else if(type=="11st"){
+		window.open("http://www.11st.co.kr", '', '');
+	}else if(type=="02"){ // Biz T world
+		window.open("http://www.biztworld.co.kr/", '', '');
+	}else if(type=="03"){ // T world다이렉트
+		window.open("http://www.tworlddirect.com/", '', '');
+	}else if(type=="04"){ // Partner on
+		window.open("http://partneron.sktelecom.com/", '', '');
+	}else if(type=="07"){ // T.um
+		window.open("http://tum.sktelecom.com/", '', '');
+	}else if(type=="08"){ // SERVICE ACE
+		window.open("https://www.serviceace.co.kr/", '', '');
+	}else if(type=="09"){ // SERVICE TOP
+		window.open("https://www.svctop.co.kr", '', '');
+	}else if(type=="15"){
+		window.open("http://www.nugu.co.kr/main/", '', '');
+	}else if(type=="16"){
+		window.open("http://b2b.tworld.co.kr", '', '');
+	}else if(type=="17"){
+		window.open("http://www.twifi.co.kr", '', '');
+	}else if(type=="18"){
+		window.open("http://www.adtcaps.co.kr/", '', '');
+	}else if(type=="19"){
+		window.open("http://www.sksports.net/", '', '');
+	}
+}
+</script>
+<!-- End footer -->
+
+
+	<script>
+		
+		$("input[name=radio-emblem]").change(function() {
+
+			if ($(this).val() == "E") {
+				if($(this).is(":checked")){
+					$("#tab-emblem").show();
+					$("#tab-character").hide();
+					$("#tab-logo").hide();
+					
+					$(".btn-tab").removeClass("active");
+					$(this).closest(".btn-tab").addClass("active");
+				}
+			} else if ($(this).val() == "C") {
+				if($(this).is(":checked")){
+					$("#tab-character").show();
+					$("#tab-emblem").hide();
+					$("#tab-logo").hide();
+					
+					$(".btn-tab").removeClass("active");
+					$(this).closest(".btn-tab").addClass("active");
+				}
+			} else {
+				if($(this).is(":checked")){
+					$("#tab-logo").show();
+					$("#tab-emblem").hide();
+					$("#tab-character").hide();
+					
+					$(".btn-tab").removeClass("active");
+					$(this).closest(".btn-tab").addClass("active");
+				}
+			}
+
+		});
+	</script>
+
+
+</body></html>
