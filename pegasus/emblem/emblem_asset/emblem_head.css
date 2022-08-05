@@ -1,0 +1,85 @@
+
+.btn-tab {
+	display: inline-block;
+	width: 457px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #aaaaaa;
+	background: #FAFAFA;
+	text-align: center;
+}
+
+#tab1, #tab2, #tab3 {
+	border-right: 1px solid #d2d2d2;
+	border-left: 1px solid #d2d2d2;
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 2px solid #241012;
+}
+
+.btn-tab input[type=radio] {
+	display: none;
+}
+
+.btn-tab label {
+	margin-top: 14px;
+	width: 100%;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+.btn-tab.active label {
+	font-weight: 500;
+}
+
+.btn-tab+.btn-tab {
+	border-left: none;
+}
+/* .btn-tab.active { */
+#tab1.active, #tab2.active, #tab3.active {
+	color: #241012;
+	border-top: 2px solid #241012;
+	border-right: 2px solid #241012;
+	border-left: 2px solid #241012;
+	border-bottom: none;
+	background: none;
+}
+
+#tab1:not(.active) {
+	border-right: none;
+}
+
+#tab2:not(.active)+#tab3:not(.active) {
+	border-left: none;
+}
+
+.tab-box {
+	padding-top: 30px;
+}
+
+#tab-logo .row .col img {
+	width: 100%;
+}
+
+
+.box-emblem {
+	padding: 50px 0px 50px 0px;
+}
+.box-emblem .row {
+	margin:0;
+}
+.box-emblem .col {
+	padding:0;
+}
+.box-emblem img {
+	width: 100%;
+}
+.box-emblem-download-btn {
+	text-align: right;
+	margin-top: 38px;
+}
+.box-emblem-half {
+	display: inline-block;
+	width: 50%;
+}
+
