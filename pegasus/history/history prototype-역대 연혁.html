@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1500, initial-scale=1">
+<meta name="facebook-domain-verification" content="rg6go5h45qivg7wx7nn9qeanzjnsxc" />
+<title>KWU PEGASUS</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .text-sns-name{
+        font-weight: 400;
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+    /* sns */
+    #tb-sns {
+        margin: 50px 0 50px 0;
+    }
+    #tb-sns td {
+        text-align: center;
+    }
+    
+    #tb-sns td:first-child {
+        text-align: left;
+        padding-left: 70px;
+    }
+    #tb-sns td:last-child {
+        text-align: right;
+        padding-right: 70px;
+    }
+    
+    #tb-sns td:not(:last-child ) {
+        border-right: 1px solid #CDD1D4;
+    }
+    
+    #tb-sns td p {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 15px 0 30px 0;
+    }
+    
+    .tr-sns-text td {
+        padding: 20px 0 0;
+        border-right: none !important;
+        border-left: none !important;
+    }
+    
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+    
+            <div>
+                
+    
+    
+    
+    
+    <!-- Navbar -->
+    <link href="/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" />
+    <link href="/css/bootstrap-grid.min.css?v=3.3.7" rel="stylesheet" />
+    <link href="/css/common.css?ver190408" rel="stylesheet" />
+    <style>
+    .navbar-custom {
+        width: 100%;
+        min-width: 1380px;
+        z-index: 1000;
+        color: #fff;
+        background: #c01c32;
+    }
+    
+    .navbar-custom button {
+        color: #fff;
+        background: none;
+        border: none;
+        line-height: 2.6;
+        padding-bottom: 5px;
+    }
+    
+    .btn-top-menu {
+        width: 125px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    
+    .btn-top-submenu {
+        padding: 0 10px
+    }
+    
+    #btn-navi-menu {
+        width: 50px;
+        height: 50px;
+        background-image: url(/img/top/top_ic_menu.png);
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+    }
+    
+    #btn-navi-menu.active {
+        background-image: url(/img/top/top_ic_close.png);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    #nav-top-menu-btns {
+        position: absolute;
+        width: 100%;
+        min-width: 1380px;
+        padding: 36px 0px 0px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        z-index: 100;
+    }
+    
+    #nav-top-menu-btns.active {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    #menu-dim table th {
+        font-size: 18px;
+        font-weight: 700;
+        border-left: 1px solid rgb(255, 255, 255, 0.3);
+        padding: 10px 20px;
+        opacity: 1;
+        line-height: 1;
+    }
+    
+    #menu-dim table td {
+        border-left: 1px solid rgb(255, 255, 255, 0.3);
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    
+    #menu-dim a {
+        color: white;
+    }
+    
+    #menu-backgroud span {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2.3;
+        opacity: 0.8;
+    }
+    
+    /* drop down */
+    .drop {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .drop:hover .dropdownContain {
+        top: 50px;
+    }
+    .drop:hover .dropOut {
+        opacity: 1;
+    }
+    
+    .dropOut .triangle {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid white;
+        top: -8px;
+        left: 50%;
+        margin-left: -8px;
+    }
+    
+    .dropdownContain {
+        /* width: 150px; */
+        position: absolute;
+        z-index: 2;
+        top: -400px;
+        left: -30px;
+    }
+    
+    .dropOut {
+        width: 180px;
+        background: white;
+        float: left;
+        position: relative;
+        margin-top: 0px;
+        opacity: 0;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+        -webkit-transition: all .1s ease-out;
+        -moz-transition: all .1s ease-out;
+        -ms-transition: all .1s ease-out;
+        -o-transition: all .1s ease-out;
+        transition: all .1s ease-out;
+    }
+    
+    .dropOut ul {
+        float: left;
+        padding: 10px 0;
+    }
+    
+    .dropOut ul li {
+        text-align: left;
+        float: left;
+        width: 125px;
+        padding: 12px 0 10px 15px;
+        margin: 0px 20px;
+        color: #4d4d4d;
+        list-style: none;
+        -webkit-transition: background .1s ease-out;
+        -moz-transition: background .1s ease-out;
+        -ms-transition: background .1s ease-out;
+        -o-transition: background .1s ease-out;
+        transition: background .1s ease-out;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    
+    .dropOut ul li a {
+        color: #4d4d4d;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    
+    .dropOut ul li:hover {
+        color: #ea002c;
+        font-weight: 500;
+    }
+    .dropOut ul li a:hover {
+        color: #ea002c;
+        font-weight: 500;
+    }
+    </style>
+
+<form action="/logout" method="post">
+	<nav class="navbar-custom">
+
+		<div id="nav-top-menu-btns">
+		
+			<div style="width:1380px;padding: 0 0;margin: 0 auto">
+				<div style="display: inline-block; margin-right:80px; padding-bottom:18px; vertical-align:bottom;"><a href="testmain.html"><img src="main\asset\logo.png"></a></div>
+				<div style="display: inline-block;vertical-align: bottom; padding-top:27px; width:calc(100% - 260px);">
+					<div style="display: inline-block;">
+	 					<button id="btn-navi-menu" type="button"></button>
+					</div>
+					
+					<div style="display: inline-block;margin-left: 56px; vertical-align:bottom;">
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='pegasus\history'">PEGASUS</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="pegasus\history\history.html">연혁</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='/players/list?position=coach'">PLAYERS</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="/players/list?position=coach">선수</a></li>
+                                        <li><a href="/players/list?position=coach">매니저</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='/game/schedule'">GAME</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="/game/schedule">경기일정</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='/media/news'">MEDIA</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="" onclick="window.open('https://www.instagram.com/kwu_pegasus/')">Instagram</a></li>
+										<li><a href="/media/photo">Photo</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='/fan/sns'">YB</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="/YB/sns">YB 공지</a></li>
+                                        <li><a href="/YB/sns">YB 일정</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="drop">
+							<button type="button" class="btn-top-menu" onclick="location.href='/stadium/info'">OB</button>
+							<div class="dropdownContain">
+								<div class="dropOut">
+									<div class="triangle"></div>
+									<ul>
+										<li><a href="/stadium/info">OB 공지</a></li>
+										<li><a href="/stadium/parking">OB 일정</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+        <!-- menu bg img -->
+		<div id="menu-backgroud" style="width: 100%;padding: 0 0px">
+			<div id="img-top-main" style="width:100%; background:#241012 url(/img/main/main_banner.jpg) no-repeat center bottom;
+			height:560px; display:block">
+			
+			</div>
+            
+			<div id="img-top-menu-bg" style="display: none; width:100%;height:560px;"></div>
+			<div style="width: 100%;max-width: 1380px; margin: 0 auto">
+				<div id="menu-title-bg" style="height: 400px;text-align: center;display:none; padding-top: 210px">
+					<!-- WYVERNS -->
+					
+					
+					
+					<!-- GAME -->
+					
+					
+					
+					<!-- MEDIA -->
+					
+					
+					<!-- FAN -->
+					
+					
+					<!-- PLAYERS -->
+					
+					
+					
+					
+					
+					
+					<!-- FAN -->
+					
+					
+					
+					<!-- FAQ -->
+					
+					<!--  -->
+					
+					
+					
+				</div>
+
+				<!-- <img id="img-top-main" src="/img/top/sk_web_main_img.png" style="display:block">
+				
+				<img id="img-top-menu-bg" src="/img/top/main_w_logo.png" style="display: none"> -->
+			</div>
+			
+		</div>
+        <!-- End Navbar -->
+
+
+	<div class="wrapper-body">
+
+		<div style="margin-bottom: 35px">
+			<img src="C:\Users\User\Desktop\KWUbaseballclubHomepage\pegasus\history\step_home.png"> <img src="C:\Users\User\Desktop\KWUbaseballclubHomepage\pegasus\history\step_arrow.png"> <span class="depth1-text">LANDERS</span> <img src="C:\Users\User\Desktop\KWUbaseballclubHomepage\pegasus\history\step_arrow.png"> <span class="depth2-text">연혁</span>
+		</div>
+
+		<!-- 년도 슬라이더 -->
+		<div id="jssor_1" style="position: relative; top: 0px; left: 0px; width: 1380px; height: 50px; overflow: hidden; background: rgb(250, 250, 250); margin-top: 40px; visibility: visible;" data-jssor-slider="1">
+			<div style="position: absolute; display: block; top: 0px; left: 100px; width: 1180px; height: 50px;"><div style="position: absolute; display: block; top: 0px; left: 0px; width: 1180px; height: 50px; transform: scale(1.001);"><div data-u="slides" style="position: absolute; top: 0px; left: 0px; width: 1180px; height: 50px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0; pointer-events: none;"><div style="top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; display: block; z-index: 0;"></div></div><div data-u="slides" style="position: absolute; top: 0px; left: 0px; width: 1180px; height: 50px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0;">
+				
+					<div style="top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; overflow: hidden; transform-style: flat; z-index: 1;"><div style="top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; display: block; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"></div><div style="text-align: center; font-size: 17px; color: rgb(170, 170, 170); padding-top: 10px; top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; display: block; transform-style: preserve-3d; z-index: 1;" data-events="auto" data-display="block">
+						<div class="btn-tab" data-events="auto" data-display="block" style="z-index: 1;">
+							<input type="button" name="radio-history" id="btn-tab-2022" value="2022시즌 활동 내역" onclick="location.href='history prototype-2022년 연혁.html'" checked="checked" data-events="auto" data-display="none" style="z-index: 1;"><label for="btn-tab-2022" data-events="auto" data-display="inline-block" style="z-index: 1;"></label>
+						</div>
+					</div></div>
+				
+					<div style="top: 0px; left: 147px; width: 147px; height: 50px; position: absolute; overflow: hidden; transform-style: flat; z-index: 1;"><div style="top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; display: block; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"></div><div style="text-align: center; font-size: 17px; color: rgb(170, 170, 170); padding-top: 10px; top: 0px; left: 0px; width: 147px; height: 50px; position: absolute; display: block; transform-style: preserve-3d; z-index: 1;" data-events="auto" data-display="block">
+						<div class="btn-tab" data-events="auto" data-display="block" style="z-index: 1;">
+							<input type="button" name="radio-history" id="btn-tab-2021" value="창단 이후 역대 연혁" onclick="location.href='history prototype-역대 연혁.html'" data-events="auto" data-display="none" style="z-index: 1;"><label for="btn-tab-2021" data-events="auto" data-display="inline-block" style="z-index: 1;"></label>
+						</div>
+					</div></div>
+				
+					
+					</div></div>
+				
+			</div></div></div>
+			
+			 <!-- Arrow Left -->
+		    <div style="position: absolute; display: block; top: 0px; left: 0px; width: 50px; height: 50px;"><div data-u="arrowleft" class="jssora073 btn-arrow jssora073ds" style="background: url(&quot;/img/wyverns/history_prev_normal.png&quot;) rgb(255, 255, 255); top: 0px; left: 0px; pointer-events: none;" data-jssor-button="1" data-nofreeze="1">
+		    	
+		    </div></div>
+		    <!-- Arrow Right -->
+		    <div style="position: absolute; display: block; top: 0px; right: 0px; width: 50px; height: 50px;"><div data-u="arrowright" class="jssora073 btn-arrow" style="right: 0px; background: url(&quot;/img/wyverns/history_next_normal.png&quot;) rgb(255, 255, 255); top: 0px; left: 0px;" data-jssor-button="1" data-nofreeze="1">
+		    
+		    </div></div>
+		    
+		</div>
+		
+		<!-- bg -->
+		<div style="position: absolute; right: 50px; bottom:0;">
+			<img src="" style="width:578px;">
+		</div>
+
+		<!-- history -->
+		<div style="margin-bottom: 100px;">
+			<div id="box-history-01" style="display: flex;margin-top: 80px;">
+				<div class="box-img-month" style="background-image: url(http://ssglanders.com/Common/Attach/History/2022/02/16/6303fdb0-a5a0-4b29-8a4d-89eb3e540379.jpg)"></div>
+					<div class="box-history-text">
+						<h2>창단 - 2021시즌</h2>
+						<ul>
+							
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1981년 4월 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 광운대학교 아마야구반 창단-2021</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1994년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 13회 전국대학야구 아마추어 춘계리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1994년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 14회 전국대학야구 아마추어 추계리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1997년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 17회 전국대학야구 아마추어 추계리그 3위 입상</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1998년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 18회 전국대학야구 아마추어 춘계리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1998년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 18회 전국대학야구 아마추어 추계리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1999년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 19회 전국대학야구 아마추어 춘계리그 우승</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">1999년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 19회 전국대학야구 아마추어 추계리그 3위 입상</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2000년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 20회 전국대학야구 아마추어 춘계리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2000년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 20회 전국대학야구 아마추어 추계리그 12강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2001년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 21회 전국대학야구 아마추어 춘계리그 3위 입상</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2001년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 21회 전국대학야구 아마추어 추계리그 준우승</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2003년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 23회 전국대학 아마추어 야구대회 준우승</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2004년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 24회 전국대학 아마추어 야구대회 준우승</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2005년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 25회 전국대학 아마추어 야구대회 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2006년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 26회 전국대학 아마추어 야구대회 4강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2007년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 27회 전국대학 아마추어 야구대회 16강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2008년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 28회 전국대학 아마추어 야구대회 버금리그 준우승</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2009년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 29회 전국대학 아마추어 야구대회 16강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">20010년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 30회 전국대학 아마추어 야구대회 버금리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2011년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 31회 전국대학 아마추어 야구대회 버금리그 16강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2012년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 32회 전국대학 아마추어 야구대회 버금리그 8강 진출</div>
+							</li>
+							<li style="display: flex;">
+								<div style="display: inline-block;">
+									<span class="text-day-ball">2013년 </span>
+								</div>
+								<div style="display: inline-block; width: 455px; line-height: 2; top: -8px; position: relative;"> - 제 33회 전국대학 아마추어 야구대회 버금리그 23강 진출</div>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+
+<!-- footer -->
+<style>
+.footer {
+	background: #121212;
+}
+
+.footer span, .footer p {
+	color: #A4A4A4;
+	line-height: 1.8;
+	font-size: 13px;
+	font-weight: 200;
+	letter-spacing:0;
+}
+.footer p {
+	font-size:12px;
+}
+.copyright {
+	position:relative;
+}
+.copyright .row .col {
+	padding: 0 9px;
+}
+
+.copyright p span {
+	padding-right: 10px;
+}
+
+.copyright p span:not (:first-child ) {
+	padding-left: 10px;
+}
+
+.copyright a {
+	color: #A4A4A4;
+}
+
+.footer .selectbox {
+display:none;
+	position: absolute;
+	width: 174px;
+	background:#262626;
+	border-radius:20px;
+	z-index: 1;
+	right: 0;
+	top:120px;
+}
+
+.footer .selectbox:before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	width: 10px;
+	height: 10px;
+	border-left: 3px solid #646464;
+	border-top: 3px solid #646464;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.footer .selectbox label {
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	padding: .6em .5em;
+	font-weight: 500;
+	z-index: -1;
+	margin:0;
+	color:#646464;
+}
+
+.footer .selectbox select {
+	width: 100%;
+	height: 40px;
+	line-height: normal;
+	font-family: inherit;
+	padding: .8em .5em;
+	border: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.slider img {
+	width: 130px;
+}
+
+#box-sponsor .btn-img {
+	width: 30px;
+	height:30px;
+	border: 1px solid #d2d2d2;
+	position:relative;
+}
+#box-sponsor .btn-img img {
+	position:absolute;
+	left:50%;
+	top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+</style>
+
+<link rel="stylesheet" href="./SSG LANDERS_files/slick.css">
+<script src="./SSG LANDERS_files/slick.min.js.다운로드"></script>
+
+<script>
+	$(document).ready(function() {
+
+		var currentSlide = $(".slider").slick({
+			infinite : true,
+			slidesToShow : 5,
+			dots : false,
+			autoplay : true,
+			autoplaySpeed : 5000,
+			arrows : false,
+			slidesToScroll : 3
+		});
+
+		$("#btn-sponsor-play").click(function() {
+			currentSlide.slick('slickPlay');
+		});
+
+		$("#btn-sponsor-pause").click(function() {
+			currentSlide.slick('slickPause');
+		});
+	});
+</script>
