@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>광운대학교 아마야구반 Pegasus</title>
+
+<!--favicon-->
+  <link rel="icon" href="/main_assets/favicon.png">
+
+<!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+<!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!--항상 부트스트랩 이후 css-->
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!--Hero-->
+    <section class = "hero">
+        <!--Header-->
+        <header>
+            <div class="container d-flex align-items-center py-3">
+                <a class = "logo me-2" href="#">
+                    <!--링크가 없을때는 #-->
+                    <img src="./main_assets/logo.png" alt="Logo">
+                </a>
+                <ul class="nav flex-grow-1">
+                    <!--증가너비의 비율 1-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Organization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">YB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/kwu_pegasus/" target = "_blank" class="nav-link text-light">Instagram</a>
+                    </li>
+                </ul>
+
+                <div class="forms d-flex">
+                    <input type="text" class = "form-control me-2" placeholder="검색">
+                    
+                    <button class = "btn btn-link text-light flex-shrink-0 me-2 text-decoration-none">로그인</button>
+                    <button class = "btn btn-outline-light flex-shrink-0">회원가입</button>
+                </div>
+                <button class = "btn ms-2" data-bs-toggle="offcanvas" data-bs-target = "#offcanvas">
+                                                                    <!--target에만 id선택자-->
+                    <img src="./main_assets/menu.svg" alt="Menu Icon">
+                </button>
+                <div class="offcanvas offcanvas-end" id = "offcanvas">
+                    <div class="offcanvas-header">
+                        <button class = "btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class = "list-group list-group-flush mb-4">
+                            <li class = "list-group-item">
+                                <a href="#">Organization</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#">YB</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#">Manager</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#">Schedule</a>
+                            </li>
+                        </ul>
+                        <input type="text" class = "form-control mb-2" placeholder="검색">
+                        <div class="d-grid mb-2">
+                            <button class = "btn btn-outline-primary">로그인</button>
+                        </div>
+                        <div class="d-grid">
+                            <button class = "btn btn-primary">회원가입</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div class="headline">
+                        <h1 class = "text-white">광운대학교 아마야구반</h1>
+                        <h1 class = "text-white"></h1>
+                        <p class="text-white-50">광운대학교 중앙동아리 아마야구반 Pegasus</p>
+                        <img src="./main_assets/organization_photo.jpg" alt="group_photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class = "curve" src="./main_assets/curve.svg" alt="Curve">
+    </section>
+
+
+</body>
+</html>
