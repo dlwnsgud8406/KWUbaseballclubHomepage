@@ -20,7 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!--항상 부트스트랩 이후 css-->
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
     <!--Hero-->
@@ -28,9 +28,9 @@
         <!--Header-->
         <header>
             <div class="container d-flex align-items-center py-3">
-                <a class = "logo me-2" href="#">
+                <a class = "logo me-2" href="../index.html">
                     <!--링크가 없을때는 #-->
-                    <img src="./main_assets/logo.png" alt="Logo">
+                    <img src="/main_assets/logo.png" alt="Logo">
                 </a>
                 <ul class="nav flex-grow-1">
                     <!--증가너비의 비율 1-->
@@ -53,13 +53,12 @@
 
                 <div class="forms d-flex">
                     <input type="text" class = "form-control me-2" placeholder="검색">
-                    
                     <button class = "btn btn-link text-light flex-shrink-0 me-2 text-decoration-none">로그인</button>
                     <button class = "btn btn-outline-light flex-shrink-0">회원가입</button>
                 </div>
                 <button class = "btn ms-2" data-bs-toggle="offcanvas" data-bs-target = "#offcanvas">
                                                                     <!--target에만 id선택자-->
-                    <img src="./main_assets/menu.svg" alt="Menu Icon">
+                    <img src="/main_assets/menu.svg" alt="Menu Icon">
                 </button>
                 <div class="offcanvas offcanvas-end" id = "offcanvas">
                     <div class="offcanvas-header">
@@ -97,13 +96,36 @@
                     <div class="headline">
                         <h1 class = "text-white">광운대학교 아마야구반</h1>
                         <h1 class = "text-white"></h1>
-                        <p class="text-white-50">광운대학교 중앙동아리 아마야구반 Pegasus</p>
-                        <img src="./main_assets/organization_photo.jpg" alt="group_photo">
+                        <p class="text-white-50">회원가입</p>
+                        <!-- <input type="text" class = "form-control me-2" placeholder="아이디">
+                        <input type="password" class = "form-control me-2" placeholder="비밀번호"> -->
+                        <div class="id">
+                            <input type="text" class = "form-control" placeholder="아이디">
+                        </div>
+                        <div class="password">
+                            <input type="password" class = "form-control" placeholder="비밀번호">
+                        </div>
+                        <div class="pwdcheck">
+                            <input type="password" class = "form-control" placeholder="비밀번호 확인">
+                        </div>
+                        <div class="name">
+                            <input type="text" class = "form-control" placeholder="이름">
+                        </div>
+                        <div class="hak">
+                            <input type="number" class = "form-control" placeholder="학번">
+                        </div>
+                        <div class="email">
+                            <input type="email" class = "form-control" placeholder="example@example.com">
+                        </div>
+
+                        <button class = "btn1 btn-outline-primary btn-outline-light">중복확인</button>
+                        <button class = "btn2 btn-outline-primary btn-outline-light">완료</button>
+                        <button class = "btn3 btn-outline-primary btn-outline-light">취소</button>
                     </div>
                 </div>
             </div>
         </div>
-        <img class = "curve" src="./main_assets/curve.svg" alt="Curve">
+        <img class = "curve" src="/main_assets/curve.svg" alt="Curve">
     </section>
 
 
